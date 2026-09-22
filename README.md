@@ -1,5 +1,10 @@
 # Shimmer for Android
 
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.anglesvar/shimmer.svg?label=Maven%20Central)](https://central.sonatype.com/artifact/io.github.anglesvar/shimmer)
+[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+[![API](https://img.shields.io/badge/API-21%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=21)
+[![Kotlin](https://img.shields.io/badge/Kotlin-2.2.10-blue.svg?logo=kotlin)](http://kotlinlang.org)
+
 A modern, Kotlin-based implementation of the shimmer effect for Android, inspired by Facebook's Shimmer library.
 
 ## Features
