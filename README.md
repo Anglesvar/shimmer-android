@@ -38,26 +38,6 @@ dependencies {
 }
 ```
 
-### GitHub Packages (Optional)
-
-Alternatively, you can use the library from GitHub Packages:
-
-```kotlin
-repositories {
-    maven {
-        url = uri("https://maven.pkg.github.com/anglesvar/shimmer-android")
-        credentials {
-            username = project.findProperty("gpr.user") as String? ?: System.getenv("USERNAME")
-            password = project.findProperty("gpr.token") as String? ?: System.getenv("TOKEN")
-        }
-    }
-}
-
-dependencies {
-    implementation("io.github.anglesvar:shimmer:1.0.0")
-}
-```
-
 ### Local Module
 
 If you're using it as a local module:
