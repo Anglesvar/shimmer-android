@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_text"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/description_text"
+            android:textSize="14sp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Alpha Shimmer Example -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alpha Shimmer (Default)"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <com.anglesvar.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer_alpha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:shimmer_auto_start="true"
+            app:shimmer_base_alpha="0.3"
+            app:shimmer_duration="1000"
+            app:shimmer_direction="left_to_right">
+
+            <include layout="@layout/placeholder_content" />
+
+        </com.anglesvar.shimmer.ShimmerFrameLayout>
+
+        <!-- Color Shimmer Example -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Color Shimmer"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp" />
+
+        <com.anglesvar.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:shimmer_colored="true"
+            app:shimmer_auto_start="true"
+            app:shimmer_base_color="#FFE0E0E0"
+            app:shimmer_highlight_color="#FFFFFFFF"
+            app:shimmer_duration="1500"
+            app:shimmer_direction="left_to_right">
+
+            <include layout="@layout/placeholder_content" />
+
+        </com.anglesvar.shimmer.ShimmerFrameLayout>
+
+        <!-- Radial Shimmer Example -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Radial Shimmer"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp" />
+
+        <com.anglesvar.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer_radial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:shimmer_auto_start="true"
+            app:shimmer_shape="radial"
+            app:shimmer_duration="2000">
+
+            <include layout="@layout/placeholder_content" />
+
+        </com.anglesvar.shimmer.ShimmerFrameLayout>
+
+        <!-- Control Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="24dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_start"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:text="@string/button_start" />
+
+            <Button
+                android:id="@+id/btn_stop"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:text="@string/button_stop" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Shimmer Sample</string>
+    <string name="title_text">Shimmer Android</string>
+    <string name="description_text">A modern implementation of Facebook\'s Shimmer effect for Android</string>
+    <string name="sample_content">This is sample content to demonstrate the shimmer effect</string>
+    <string name="button_start">Start Shimmer</string>
+    <string name="button_stop">Stop Shimmer</string>
+</resources>
