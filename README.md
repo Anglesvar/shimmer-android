@@ -26,7 +26,7 @@ Add the dependency to your app's `build.gradle.kts`:
 
 ```kotlin
 dependencies {
-    implementation("com.anglesvar:shimmer:1.0.0")
+    implementation("io.github.anglesvar:shimmer:1.0.0")
 }
 ```
 
@@ -34,13 +34,13 @@ Or in `build.gradle`:
 
 ```groovy
 dependencies {
-    implementation 'com.anglesvar:shimmer:1.0.0'
+    implementation 'io.github.anglesvar:shimmer:1.0.0'
 }
 ```
 
-### GitHub Packages
+### GitHub Packages (Optional)
 
-To use the library from GitHub Packages, add the repository and dependency:
+Alternatively, you can use the library from GitHub Packages:
 
 ```kotlin
 repositories {
@@ -54,7 +54,7 @@ repositories {
 }
 
 dependencies {
-    implementation("com.anglesvar:shimmer:1.0.0")
+    implementation("io.github.anglesvar:shimmer:1.0.0")
 }
 ```
 
